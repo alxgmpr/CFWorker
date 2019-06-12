@@ -1,0 +1,37 @@
+{
+  "name": "cfsolve",
+  "version": "1.0.0",
+  "description": "Solve cloudflare challenges",
+  "main": "cfworker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel cfworker.js config.js -d lib"
+  },
+  "keywords": [
+    "cf",
+    "atc",
+    "bot",
+    "automation",
+    "cloudflare"
+  ],
+  "author": "Alexander Gompper",
+  "license": "MIT",
+  "respository": "https://github.com/alxgmpr/CFWorker",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "chalk": "^2.4.2",
+    "console-stamp": "^0.2.9",
+    "https-proxy-agent": "^2.2.1",
+    "puppeteer": "^1.17.0",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
