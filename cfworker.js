@@ -172,6 +172,8 @@ class CFWorker {
   }
 }
 
+module.exports = CFWorker;
+
 // (async () => {
 //   try {
 //     const worker = new CFWorker('localhost:8888', 'https://www.sneakersnstuff.com/en/product/36523/jordan-brand-wmns-air-jordan-1-high-og');
