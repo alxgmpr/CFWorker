@@ -172,30 +172,30 @@ class CFWorker {
   }
 }
 
-(async () => {
-  try {
-    const worker = new CFWorker('localhost:8888', 'https://www.sneakersnstuff.com/en/product/36523/jordan-brand-wmns-air-jordan-1-high-og');
-    await worker.getNewCfToken()
-      .catch((e) => {
-        console.error(e);
-        console.error('Getting new CF token failed');
-      });
-    console.dir(worker.requestOptions);
-    await request('https://www.sneakersnstuff.com/en/product/36541/jordan-brand-air-jordan-1-retro-high-og-gs', worker.requestOptions)
-      .then(({statusCode}) => {
-        console.log(`test: ${statusCode}`)
-    });
-    // await worker.runAxiosTest()
-    //   .catch((e) => {
-    //     console.error(e);
-    //     console.error('Axios test failed');
-    //   });
-    // await worker.runRequestTest()
-    //   .catch((e) => {
-    //     console.error(e);
-    //     console.error('Request test failed');
-    //   });
-  } catch (e) {
-    console.error(e);
-  }
-})();
+// (async () => {
+//   try {
+//     const worker = new CFWorker('localhost:8888', 'https://www.sneakersnstuff.com/en/product/36523/jordan-brand-wmns-air-jordan-1-high-og');
+//     await worker.getNewCfToken()
+//       .catch((e) => {
+//         console.error(e);
+//         console.error('Getting new CF token failed');
+//       });
+//     console.dir(worker.requestOptions);
+//     await request('https://www.sneakersnstuff.com/en/product/36541/jordan-brand-air-jordan-1-retro-high-og-gs', worker.requestOptions)
+//       .then(({statusCode}) => {
+//         console.log(`test: ${statusCode}`)
+//     });
+//     // await worker.runAxiosTest()
+//     //   .catch((e) => {
+//     //     console.error(e);
+//     //     console.error('Axios test failed');
+//     //   });
+//     // await worker.runRequestTest()
+//     //   .catch((e) => {
+//     //     console.error(e);
+//     //     console.error('Request test failed');
+//     //   });
+//   } catch (e) {
+//     console.error(e);
+//   }
+// })();
